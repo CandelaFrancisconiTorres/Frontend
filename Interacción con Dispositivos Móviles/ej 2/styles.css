@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{ /* TAMAÑO MOVIL */
+    background-color: #cffad9;
+    min-width: 320px;
+    max-width: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: auto;
+    margin: 20px;
+}
+h1{
+    font-size: 26px;
+    text-align: center;
+    margin: 10px 5px;
+    padding: 10px;
+    justify-content: center;
+    /*background-color: palevioletred;*/
+}
+h2{
+    font-size: 24px;
+    text-align: center;
+    margin: 5px 5px;
+    padding: 20px;
+    justify-content: center;
+    /*background-color: palevioletred;*/
+}
+p{
+    font-size: 20px;
+    margin: 20px 10px;
+    padding: 0 20px;
+    justify-content: center;
+    text-align: justify;
+    width: auto;
+    line-height: 1.5;
+}
+p::first-letter{
+    font-size: 28px;
+    font-style: italic;
+    font-weight: bold;
+}
+img{
+    margin: 20px 0px;
+    width: 100%;
+    border-radius: 20px;
+    justify-items: center;
+    align-content: center;
+}
+img:nth-child(even){
+    width: 80%;
+    margin: 0 25px;
+    justify-items: center;
+    align-content: center;
+}
+.img-container{
+    /*background-color:blanchedalmond;*/
+    display: grid;
+    grid-template-columns: auto;
+    padding: 20px;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+button{
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+    background-color: #dd25b8;
+    border: solid white 1.5px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5ms;
+}
+button:hover{
+    background-color: #580347;
+    margin: auto;
+    padding: 10px;
+    font-size: 24px;
+}
+
+
+
+
+/* ----------- BREAKPOINTS ----------- */
+
+/* TAMAÑO TABLET*/ 
+@media(min-width:601px){ 
+    body{
+        /*background-color: lightgreen;*/
+        max-width: 900px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 28px;
+    }
+    p{
+        font-size: 24px;
+    }
+    p::first-letter{
+        font-size: 28px;
+    }
+    img{
+        border-radius: 4cap;
+        margin: 40px 0;
+    }
+    img:nth-child(even){
+        margin: 20px 50px;
+    }
+    .img-container{
+        padding: 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        font-size: 24px;
+    }
+    button:hover{
+        font-size: 26px;
+    }
+}
+
+
+
+
+
+
+
+
+/* TAMAÑO DESKTOP*/
+@media(min-width: 901px){ 
+    body{
+        /*background-color: lightblue;*/
+        max-width: none;
+    }
+    h1{
+        font-size: 3rem;
+        margin-top: 5vh; 
+    }
+    h2{
+        font-size: 2.5rem;
+        margin: 4vh;
+    }
+    p{
+        font-size: 1.5rem;
+        margin: 1vw;
+    }
+    img{
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 2vh;
+        border-radius: 5cap;
+    }
+    .img-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 5vh;
+        justify-items: center;
+        align-content: center;
+    }
+    button{
+        font-size: 1.5rem;
+    }
+    button:hover{
+        font-size: 2rem;
+    }
+}

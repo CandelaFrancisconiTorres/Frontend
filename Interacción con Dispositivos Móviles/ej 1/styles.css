@@ -1,0 +1,163 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{ /* TAMAÑO MOVIL */
+    background-color: beige;
+    min-width: 320px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: auto;
+    margin: 20px;
+}
+.titulo{
+    font-size: 26px;
+    text-align: center;
+    margin: 10px 5px;
+    padding: auto;
+    justify-content: center;
+    /*background-color: palevioletred;*/
+}
+.titulo::before{
+    content: "🤩​🏐​";
+}
+.titulo::after{
+    content: "🏐​🤩​​";
+}
+
+p{
+    font-size: 20px;
+    margin: 20px 10px;
+    justify-content: center;
+    text-align: justify;
+    width: auto;
+    line-height: 1.5;
+}
+
+
+ul{
+    column-gap: 5px;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #d3bdad;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+}
+
+li{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+    padding: 10px 10px;
+    border: solid black 4px;
+    background-color: orange;
+    border-radius: 20px;
+}
+li:hover{
+    cursor: pointer;
+}
+
+li:nth-child(even){
+    font-weight: bold;
+    color: orange;
+    background-color: black;
+    border: solid orange 4px;
+}
+
+
+img{
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+/* ----------- BREAKPOINTS ----------- */
+
+/* TAMAÑO TABLET*/ 
+@media(min-width:600px){ 
+    body{
+        /*background-color: lightgreen;*/
+    }
+    .titulo{
+        font-size: 30px;
+    }
+    p{
+        font-size: 24px;
+    }
+    ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 5px;
+        column-gap: 10px;
+        border-radius: 3cap;
+    }
+    li{
+        margin: 10px 15px;
+        padding: 10px 20px;
+    }
+    img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4cap;
+    }
+}
+
+
+
+
+
+
+
+
+/* TAMAÑO DESKTOP*/
+@media(min-width: 900px){ 
+    body{
+        /*background-color: lightblue;*/
+        max-width: none;
+    }
+    .titulo{
+        font-size: 2rem;
+        margin-top: 5vh; 
+    }
+    p{
+        font-size: 1.5rem;
+        margin: 1vw;
+    }
+    ul{
+        display: inline-flex;
+        margin: 3vh 0;
+        width: 100%;
+        border-radius: 4cap;
+
+    }
+    li{
+        font-size: 1rem;
+        border: solid black 0.3cap;
+        border-radius: 1.5cap;
+        margin: auto;
+        padding: 1cap 2cap;
+    }
+    li:nth-child(even){
+        border: solid orange 0.3cap;
+    }
+    img{
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 2vh;
+        border-radius: 5cap;
+    }
+}

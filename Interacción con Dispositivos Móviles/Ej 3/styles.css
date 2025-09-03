@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #5e819f;
+    color: white;
+    margin: 20px;
+    padding: 5px;
+    font-family: "Roboto", sans-serif;
+    min-width: 320px;
+    display: grid;
+    grid-template-columns: 100%;
+}
+h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: start;
+}
+img{
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media(min-width: 600px){ /* TABLET */
+    body{
+        margin: 30px;
+        padding: 10px;
+    }
+    h1{
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+}
+
+@media(min-width: 900px){ /* DESKTOP */
+    body{
+        margin: 40px;
+        padding: 20px;
+    }
+    h1{
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+}
