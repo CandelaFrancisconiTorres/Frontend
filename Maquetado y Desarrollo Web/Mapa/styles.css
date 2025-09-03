@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin: 0;
+}
+
+.contenedor-mapa{
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-mapa h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mapa-responsive{
+    position: relative;
+    overflow: hidden; /* evita que el contenido se muestre fuera de los límites establecidos y que no se vea nada extraño */
+    padding-bottom: 56.25%; /* Relación 16:9 */
+    height: 0;
+}
+
+.mapa-responsive iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
