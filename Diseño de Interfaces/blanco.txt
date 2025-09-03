@@ -1,4 +1,0 @@
-colores fondo: 
-ffffff
-e3dac9
-FFFAF0
