@@ -1,0 +1,2 @@
+Diseño Vectorial (me permiete crear vectores a través de una imágen) e Interacción con Dispositivos Móviles (es la correlativa de Maquetado y Desarrollo Web) me permite crear páginas responsive basándome en mobile first y teniendo buenas prácticas.
+Comunicación Visual, Maquetado y Desarrollo Web, y Diseño de Interfaces, son materias que me permitieron adentrarme a lo visual y poder desarrollar prototipos de páginas web y de apps.
